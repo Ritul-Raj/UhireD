@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Rubik+Moonrocks&display=swap");
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+    font-family:'Baloo Bhai 2';
+}
+h1,h2,h3,h4{
+    font-family:'Baloo Bhai 2';
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 3rem; 
+}
+p{
+    font-size: 1.6rem;
+    letter-spacing: 0.08rem;
+}
+
+button,input[type="submit"]{
+    border: 0.1rem solid #fff;
+    outline: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.registration_header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("assests/office1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.logo p
+{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+a:hover{
+    /* background-color: transparent; */
+    color: rgb(205, 198, 198);
+}
+
+.form_text button{
+    border-radius: 3px;
+}
+.loginregister :hover{
+    background-color: rgb(81, 167, 237);
+}
+
+/* registration page styling */
+main{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridtwocoloumn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.registration, .login{
+    min-height: 30rem;
+    min-width: 40vw;
+    background-color: aqua;
+}
+.login .form_text{
+    background-image: linear-gradient(rgba(0,0,0,0.4) ,rgba(0,0,0,0.4) ),url("assests/handshake1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.form_text{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(166, 155, 155, 0.4) ,rgba(0, 0, 0, 0.4)  ),url("assests/loginimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    padding: 3rem 2rem;
+}
+
+.form_text p{
+    width: 30ch;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+
+}
+.form_text button{
+    background-color: #fff;
+    color: black;
+}
+.form_text button:hover{
+    background-color: transparent;
+    color: white;
+}
+.registration_form , .login_form{
+    width: 100%;
+     min-height:50vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registration_form p, .login_form p{
+    margin: 1rem 0 0.7rem 0;
+}
+.fa-brands{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.1rem solid #ccc;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem 
+}
+.social_icons{
+    display: flex;
+    gap: 1.4rem;
+    margin: 1rem 0 0.6rem 0;
+}
+input{
+    width: 20rem;
+    margin: 0.7rem 0;
+    border: none;
+    background-color: #c0bbbb;
+    padding: 1rem 1.8rem;
+    letter-spacing: 0.06rem;
+    border-radius: 3px;
+}
+
+input[type="submit"]{
+    margin-top: 1rem;
+    min-width: 10rem;
+    background-color: rgb(72, 72, 255);
+    color: #fff;
+    border-radius: 3px;
+}
+
+
+.registration:not(.login_section_display){       
+    display: none;
+}
+.login_section_display .registration{
+    display: block;
+}
+.login_section_display .login{
+    display: none;
+}
+
+
+
+.hero_section{
+    height: inherit;
+
+}
+
+.hero_content{
+    color: white;
+    text-align: center;
+}
+.hero_content p{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+}
+
+.hero_content button{
+    margin-top: 2rem;
+    background-color: rgb(72, 72, 255);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+}
+.hero_content button:hover{
+    background-color: rgb(190, 150, 56);
+   
+}
+.hero_content p{
+    font-family: sans-serif;
+}
+
+@media screen and (max-width :786px){
+    h1,h2,h3,h4{
+        font-family:sans-serif;
+    }
+html{
+    font-family:sans-serif;
+    font-size: 51%;
+  }
+   .gridtwocoloumn{
+    /* display: grid; */
+    grid-template-columns: 1fr;
+   } 
+
+    .registration_header .container,.home-header .container {
+       flex-direction: column;
+       gap: 1rem;
+    }
+
+.registration,.login{
+    min-width:90vw;
+}
+
+.form_text{
+    order: 1;
+}
+
+.registration,.login{
+    order: 0;
+}
+.form_text p{
+    width: 25ch;
+}
+
+
+
+}
+
+
+
+
